@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="index.css">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>v0.1 介绍空洞骑士</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
 <section class="game-container">
   <!-- 原有标题模块 -->
   <header class="title-card">
@@ -8,12 +15,32 @@
       <span class="main-word">KNIGHT</span>
     </h1>
   </header>
-  
+  <div class="pixel-counter">
+    <div class="pixel-border top-left"></div>
+    <div class="pixel-border top-right"></div>
+    <div class="pixel-border bottom-left"></div>
+    <div class="pixel-border bottom-right"></div>
+    <span class="counter-label">BILIBILI FANS</span>
+    <span class="counter-number" id="fansCount">LOADING...</span>
+</div>
+  <div class="counter-container">
+    <button id="counterBtn">想要丝之歌+1</button>
+    <span id="countDisplay">0</span>
+  </div>
+    <!-- 新增图片展示模块 -->
+    <figure class="gallery-container">
+      <img 
+        src="https://img0.baidu.com/it/u=1230408244,1681695392&fm=253&fmt=auto&app=120&f=JPEG?w=418&h=633" 
+        alt="空洞骑士丝之歌艺术概念图"
+        class="gallery-image"
+      >
+    </figure>
+    <script src="script.js"></script>
   <!-- 新增游戏介绍模块 -->
   <div class="intro-container">
     <div class="intro-card">
       <h3 class="section-title">背景故事</h3>
-      <p class="section-text">沉睡千年的圣巢王国，正被瘟疫侵蚀，作为神秘小骑士的你将深入地下世界，解开被遗忘的文明之谜</p>
+      <p class="section-text">  沉睡千年的圣巢王国，正被瘟疫侵蚀，作为神秘小骑士的你将深入地下世界，解开被遗忘的文明之谜</p>
     </div>
     <div class="intro-card">
       <h3 class="section-title">游戏特色</h3>
@@ -22,6 +49,7 @@
         <li>非线性探索地图</li>
         <li>动态战斗系统</li>
         <li>增加了新特性</li>
+        <li>新角色</li>
       </ul>
     </div>
   </div>
@@ -29,3 +57,5 @@
   <!-- 原有描述模块 -->
   <p class="narrative-text">探索被遗忘的昆虫王国，揭开圣巢的古老秘密</p>
 </section>
+</body>
+</html>
