@@ -1,0 +1,95 @@
+/* ======================
+   核心布局框架 
+   ====================== */
+   .game-container {
+    /* 定位属性 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* 尺寸属性 */
+    min-height: 100vh;
+    padding: 2rem;
+    
+    /* 视觉样式 */
+    background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
+    text-align: center;
+  }
+  
+  .intro-container {
+    /* 网格布局 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    
+    /* 容器约束 */
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  /* ======================
+   卡片组件样式 
+   ====================== */
+.intro-card {
+  /* 容器样式 */
+  padding: 1.5rem;
+  border: 1px solid #302323;
+  border-radius: 8px;
+  
+  /* 背景效果 */
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(2px);
+}
+
+.section-title {
+  /* 文字样式 */
+  color: #e0e0e0;
+  font-size: 1.4rem;
+  
+  /* 间距控制 */
+  margin: 0 0 1rem 0;
+}
+
+.feature-list {
+  /* 列表重置 */
+  list-style: none;
+  padding: 0;
+  
+  /* 文本排版 */
+  color: #a0a0a0;
+  line-height: 1.8;
+}
+/* ======================
+   移动端适配 (≤768px)
+   ====================== */
+   @media (max-width: 768px) {
+    .intro-container {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    
+    .brand-title {
+      font-size: 3rem; /* 移除!important */
+    }
+    
+    .narrative-text {
+      max-width: 90%;
+    }
+  }
+/* ======================
+   设计变量定义
+   ====================== */
+   :root {
+    --primary-dark: #1a1a1a;
+    --accent-gray: #a0a0a0;
+    --border-color: #404040;
+    --card-padding: 1.5rem;
+  }
+  
+  /* 应用示例 */
+  .intro-card {
+    padding: var(--card-padding);
+    border-color: var(--border-color);
+  }
+
+      
