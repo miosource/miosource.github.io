@@ -1,0 +1,37 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    background-color: #333; /* 导航栏背景色 */
+    padding: 1rem 2rem;     /* 上下1rem 左右2rem */
+  }
+  
+  .nav-list {
+    display: flex;          /* Flex布局实现水平排列 */
+    list-style-type: none;  /* 移除列表符号 */
+    gap: 2rem;              /* 菜单项间距 */
+  }
+  
+  .nav-list a {
+    color: white;           /* 文字颜色 */
+    text-decoration: none; /* 移除下划线 */
+    font-family: Arial, sans-serif;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+  }
+  
+  /* 悬停效果 */
+  .nav-list a:hover {
+    background-color: #555; 
+    border-radius: 4px;
+  }
+  
+  /* 激活状态 */
+  .nav-list a.active {
+    background-color: #04AA6D;
+    border-radius: 4px;
+  }
